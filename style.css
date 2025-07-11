@@ -302,6 +302,7 @@ footer ul li a {
     padding: 10px 30px 10px 30px;
     color: white;
 }
+
 @media (max-width: 425px) {
     header {
         flex-direction: column;
@@ -385,41 +386,29 @@ footer ul li a {
     }
 }
 
+.mobile-menu-link {
+    display: none;
+}
+
+.mobile-menu-link a {
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 
 @media (max-width: 768px) {
-    nav ul {
+
+    nav,
+    .header-right {
         display: none;
-        flex-direction: column;
-        background-color: #222;
-        padding: 10px;
-        position: absolute;
-        top: 60px;
-        left: 20px;
-        z-index: 999;
-        border-radius: 5px;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        color: white;
-        font-size: 16px;
-    }
-
-    /* لما تتفعل الكلاس active */
-    nav.active ul {
-        display: flex;
-    }
-
-    /* عرض زرار bars */
-    .menu-icon {
+    .mobile-menu-link {
         display: block;
-    }
-
-    /* إخفاء nav الأساسي لأنه سيتم فتحه من الزر */
-    nav {
-        position: relative;
     }
 }
