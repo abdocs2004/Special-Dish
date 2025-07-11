@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100svw;
+    height: 100svh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.call {
+    color: white;
+    font-size: 12px;
+}
+
+.reserve-btn {
+    background-color:red;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.hero {
+    background-image: url(/imgs/one.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-text {
+    text-align: left;
+    color: white;
+    max-width: 600px;
+}
+
+.small-title {
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.reservation-btn {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background-color:white;
+}
+
+.text-content {
+    flex:1 1;
+    padding-right: 40px;
+}
+
+.text-content h6 {
+    text-transform: uppercase;
+    color: rgb(68, 69, 67);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    color: black;
+}
+
+.text-content p {
+    color: #555151;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.chefs-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.chefs-section p {
+    color: #6e6d6d;
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.chefs-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.chef-photo {
+    width: 250px;
+    text-align: center;
+}
+
+.chef-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.chef-photo h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chef-photo p {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.map-container {
+    flex: 1 1 400px;
+    min-height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-container {
+    flex:  1 400px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input {
+    flex: 1;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #fc6565;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color:white;
+}
+
+.btn2 {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #b71c1c;
+}
+
+footer {
+    display: flex;
+    background-color: #555;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+.footer-name {
+    padding: 10px 30px 10px 30px;
+    color: white;
+}
+
+.footer-adress {
+    padding: 10px 30px 10px 30px;
+    color: white;
+}
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .reservation-btn {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .two {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .text-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .image-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .chefs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+        height: auto;
+    }
+
+    footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-name,
+    .footer-adress {
+        padding: 5px 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        z-index: 999;
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 16px;
+    }
+
+    /* لما تتفعل الكلاس active */
+    nav.active ul {
+        display: flex;
+    }
+
+    /* عرض زرار bars */
+    .menu-icon {
+        display: block;
+    }
+
+    /* إخفاء nav الأساسي لأنه سيتم فتحه من الزر */
+    nav {
+        position: relative;
+    }
+}
