@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div id="product-container"></div>
+
+    <div class="checkout-form">
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Address" required></textarea>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="card">Credit/Debit Card</option>
+            </select>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
