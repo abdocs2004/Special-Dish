@@ -109,7 +109,7 @@ nav a {
 
 
 .hero {
-    background-image: url(/imgs/one.jpg);
+    background-image: url(one.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
