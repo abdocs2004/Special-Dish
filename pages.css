@@ -1,0 +1,88 @@
+.page-hero {
+    padding: 90px 0 50px;
+}
+
+.page-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(32px, 4vw, 52px);
+    margin: 12px 0;
+}
+
+.page-hero p {
+    color: var(--muted);
+    max-width: 640px;
+}
+
+.info-block {
+    padding: 20px;
+}
+
+.info-block p,
+.info-block li {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.info-list {
+    list-style: none;
+    display: grid;
+    gap: 6px;
+    padding-left: 0;
+}
+
+.timeline {
+    display: grid;
+    gap: 14px;
+}
+
+.timeline-item {
+    padding: 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.form-card {
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--ink);
+}
+
+.form-card textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.location-card {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.blog-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (max-width: 720px) {
+    .page-hero {
+        padding-top: 70px;
+    }
+}

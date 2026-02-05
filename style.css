@@ -1,415 +1,98 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    max-width: 100svw;
-    height: 100svh;
-}
-
-
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    background-color: transparent;
-}
-
-.logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #ffffff;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-
-#mobile-nav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.9);
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
-    z-index: 99;
-}
-
-#mobile-nav.active {
-    max-height: 300px;
-}
-
-#mobile-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 10px 0;
-}
-
-#mobile-nav li {
-    padding: 12px 0;
-}
-
-#mobile-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-
-.call {
-    color: white;
-    font-size: 12px;
-}
-
-.reserve-btn {
-    background-color: red;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 3px;
-    font-size: 14px;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-
 .hero {
-    background-image: url(one.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    padding-top: 30px;
+}
+
+.hero-visual {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 80px;
+    display: grid;
+    place-items: center;
 }
 
-.hero-text {
-    text-align: left;
-    color: white;
-    max-width: 600px;
+.hero-card {
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    width: min(380px, 100%);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.small-title {
-    letter-spacing: 2px;
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-
-.hero-text h1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.4;
-}
-
-.reservation-btn {
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-
-.two {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 80px;
-    background-color: white;
-}
-
-.text-content {
-    flex: 1 1;
-    padding-right: 40px;
-}
-
-.text-content h6 {
-    text-transform: uppercase;
-    color: rgb(68, 69, 67);
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.text-content h2 {
-    font-size: 32px;
-    margin: 20px 0;
-    color: black;
-}
-
-.text-content p {
-    color: #555151;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.image-content {
-    flex: 1;
-    text-align: right;
-}
-
-.image-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-.chefs-section h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.chefs-section p {
-    color: #6e6d6d;
-    font-size: 14px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.chefs-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.chef-photo {
-    width: 250px;
-    text-align: center;
-}
-
-.chef-photo img {
+.hero-card img {
+    border-radius: var(--radius-md);
+    height: 240px;
+    object-fit: cover;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
-.chef-photo h3 {
-    margin-top: 15px;
+.hero-card-info {
+    margin-top: 16px;
+}
+
+.hero-card-info h4 {
     font-size: 18px;
-    font-weight: bold;
+    margin-bottom: 6px;
 }
 
-.chef-photo p {
+.hero-card-info p {
+    color: var(--muted);
     font-size: 13px;
-    color: #aaa;
-    margin-top: 5px;
 }
 
-
-.contact-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: center;
+.hero-card-info .price {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--accent-2);
 }
 
-.map-container {
-    flex: 1 1 400px;
-    min-height: 350px;
-    border-radius: 8px;
-    overflow: hidden;
+.floating-tag {
+    position: absolute;
+    bottom: -18px;
+    right: 10px;
+    background: rgba(15, 13, 10, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--muted);
 }
 
-.form-container {
-    flex: 1 400px;
+.story-media {
+    position: relative;
 }
 
-.form-container h2 {
+.story-media img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.media-card {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    background: rgba(9, 8, 7, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 14px 18px;
+    border-radius: var(--radius-md);
+    font-size: 13px;
+}
+
+.signature-card img,
+.chef-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.experience-card i {
     font-size: 24px;
-    margin-bottom: 20px;
+    color: var(--accent-2);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.review-card {
+    font-style: italic;
 }
 
-.row {
-    display: flex;
-    gap: 10px;
-}
-
-.row input {
-    flex: 1;
-}
-
-input,
-textarea {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #fc6565;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-input:focus,
-textarea:focus {
-    border-color: white;
-}
-
-.btn2 {
-    background-color: #d32f2f;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn2:hover {
-    background-color: #b71c1c;
-}
-
-
-footer {
-    display: flex;
-    background-color: #555;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: space-between;
-    height: 150px;
-    padding: 0 30px;
-}
-
-footer ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-footer ul li a {
-    color: white;
-}
-
-.footer-name {
-    color: white;
-}
-
-.footer-adress {
-    color: white;
-}
-
-
-@media (max-width: 768px) {
-    .desktop-nav,
-    .header-right {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-    }
-}
-
-@media (max-width: 425px) {
-    header {
-        flex-direction: row;
-        padding: 15px 20px;
-        gap: 15px;
-    }
-
-    .hero-text {
-        text-align: center;
-        padding: 0 15px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .reservation-btn {
-        display: inline-block;
-        margin-top: 15px;
-    }
-
-    .two {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    .text-content {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .image-content {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .chefs-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-section {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .row {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        padding: 20px;
-        height: auto;
-    }
-
-    footer ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+.cta-card {
+    background: linear-gradient(140deg, rgba(228, 87, 46, 0.15), rgba(242, 165, 65, 0.08));
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }

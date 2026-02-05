@@ -1,136 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Dish | Elevated Food Ordering</title>
+    <meta name="description" content="Special Dish serves bold, seasonal comfort food with fast ordering and curated chef specials. Order online, reserve a table, or plan your next event.">
+    <meta name="keywords" content="Special Dish, food ordering, restaurant, delivery, chef specials, reservations">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f0d0a">
+    <link rel="canonical" href="https://specialdish.example/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Special Dish</title>
+    <meta property="og:title" content="Special Dish | Elevated Food Ordering">
+    <meta property="og:description" content="Bold flavors, chef-crafted dishes, and effortless online ordering.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://specialdish.example/">
+    <meta property="og:image" content="https://specialdish.example/one.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Special Dish | Elevated Food Ordering">
+    <meta name="twitter:description" content="Bold flavors, chef-crafted dishes, and effortless online ordering.">
+    <meta name="twitter:image" content="https://specialdish.example/one.webp">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "Special Dish",
+            "url": "https://specialdish.example/",
+            "image": "https://specialdish.example/one.webp",
+            "description": "Chef-crafted comfort food with online ordering and reservations.",
+            "telephone": "+201025967218",
+            "priceRange": "$$",
+            "servesCuisine": ["Mediterranean", "Comfort Food", "Grill"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "October Garden Golf Corner",
+                "addressLocality": "Giza",
+                "addressCountry": "EG"
+            },
+            "sameAs": [
+                "https://www.facebook.com/",
+                "https://www.instagram.com/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Special Dish",
+            "url": "https://specialdish.example/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://specialdish.example/menu.html?search={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
 </head>
-
 <body>
-    <header>
-        <div class="logo">Special Dish</div>
-
-        <!-- أيقونة bars -->
-        <div class="menu-icon" onclick="barmenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <!-- قائمة الديسكتوب -->
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#chef">CHEF</a></li>
-                <li><a href="/menu.html">MENU</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">Special <span>Dish</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
+                    aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="primaryNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3 navbar-actions">
+                        <a class="phone-link" href="tel:+201025967218">Call +201025967218</a>
+                        <a class="btn btn-outline-light btn-sm" href="reservations.html">Reserve</a>
+                        <a class="btn btn-outline-light btn-sm position-relative" href="cart.html" aria-label="View cart">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count" data-cart-count>0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
-
-        <div class="header-right">
-            <span class="call">CALL NOW! <i class="fa-solid fa-phone-volume"></i> 010 020 0340</span>
-            <a href="#" class="reserve-btn">Reserve a table</a>
-        </div>
     </header>
 
-    <!-- قائمة الموبايل -->
-    <nav id="mobile-nav">
-        <ul>
-            <li><a href="#home" onclick="barmenu()">HOME</a></li>
-            <li><a href="#about" onclick="barmenu()">ABOUT</a></li>
-            <li><a href="#chef" onclick="barmenu()">CHEF</a></li>
-            <li><a href="/menu.html" onclick="barmenu()">MENU</a></li>
-            <li><a href="#contact" onclick="barmenu()">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <p class="small-title">NEW RESTAURANT IN TOWN</p>
-            <h1>Enjoy our special menus every<br>Sunday and Friday</h1>
-            <a href="#" class="reservation-btn">Reservation</a>
-        </div>
-    </section>
-
-    <section class="two" id="about">
-        <div class="text-content">
-            <h6>READ OUR STORY</h6>
-            <h2>We've been Making The Delicious Foods Since 1999</h2>
-            <p>
-                Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada.
-                Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue
-                lectus, rhoncus venenatis leo malesuada id.
-            </p>
-            <p>
-                Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac,
-                posuere tristique magna. You can use this template for your cafe or restaurant
-                website. Please tell your friends about templatemo. Thank you.
-            </p>
-        </div>
-        <div class="image-content">
-            <img src="two.jpg" alt="Chef">
-        </div>
-    </section>
-
-    <section class="chefs-section" id="chef">
-        <h1>Meet our chefs</h1>
-        <p>They are nice & friendly</p>
-        <div class="chefs-container">
-            <div class="chef-photo">
-                <img src="male-chef-kitchen-cooking-dish-frying-pan.jpg" alt="New Catherine">
-                <h3>New Catherine</h3>
-                <p>KITCHEN OFFICER</p>
-            </div>
-            <div class="chef-photo">
-                <img src="male-chef-kitchen-holding-plate-fresh-vegetables.jpg" alt="Lindsay Perlen">
-                <h3>Lindsay Perlen</h3>
-                <p>OWNER & MANAGER</p>
-            </div>
-            <div class="chef-photo">
-                <img src="smiling-young-male-cook-chef-uniform-holding-prepared-beef-dish-against-white-background.jpg"
-                    alt="Isabella Grace">
-                <h3>Isabella Grace</h3>
-                <p>PIZZA SPECIALIST</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.726193048771!2d100.56230301534102!3d13.756330690345116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29edfa87bc7df%3A0x3c9b0ecba4ac86e3!2sG%20Tower!5e0!3m2!1sen!2sth!4v1629981797466!5m2!1sen!2sth"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <div class="form-container">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="row">
-                    <input type="text" placeholder="Full name" required>
-                    <input type="email" placeholder="Email address" required>
+    <main>
+        <section class="hero py-5" id="home">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="badge">New winter menu now live</span>
+                        <h1 class="display-5 fw-semibold mt-3">Flavor-forward dishes, crafted for bold appetites.</h1>
+                        <p class="lead text-muted">
+                            Special Dish delivers a curated menu built around fire-grilled proteins, bright herbs,
+                            and seasonal comfort sides. Order in seconds or reserve a table for a memorable night out.
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-primary" href="menu.html">Order now</a>
+                            <a class="btn btn-outline-light" href="reservations.html">Book a table</a>
+                        </div>
+                        <div class="row g-3 mt-4">
+                            <div class="col-4">
+                                <h3 class="h4 mb-1">22 min</h3>
+                                <p class="text-muted small">average delivery</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="h4 mb-1">4.9</h3>
+                                <p class="text-muted small">guest rating</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="h4 mb-1">14</h3>
+                                <p class="text-muted small">chef signatures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-visual">
+                            <div class="hero-card">
+                                <img src="one.webp" alt="Signature grilled dish">
+                                <div class="hero-card-info">
+                                    <h4>Charcoal Chicken Plate</h4>
+                                    <p>Herb butter, lemon quinoa, citrus glaze</p>
+                                    <span class="price">$12.50</span>
+                                </div>
+                            </div>
+                            <div class="floating-tag">Chef seasonal pick</div>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" placeholder="Subject" required>
-                <textarea rows="5" placeholder="Tell about your project" required></textarea>
-                <button class="btn2" type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <footer>
-        <p class="footer-name">Design By &copy; abdelrahiman Ibrahim</p>
-        <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul>
-        <p class="footer-adress"><strong>Adress:</strong><br>October Garden Golf Corner</p>
+        <section class="section signatures">
+            <div class="container">
+                <div class="section-header mb-4">
+                    <h2 class="section-title">Signature dishes</h2>
+                    <p class="section-subtitle">Hand-finished plates that keep our regulars coming back.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="card h-100 signature-card">
+                            <img src="pizza.webp" class="card-img-top" alt="Pizza with mushroom and sausage">
+                            <div class="card-body">
+                                <h3 class="h5">Fired Mushroom Pizza</h3>
+                                <p class="text-muted small">Smoked gouda, thyme, chili honey drizzle.</p>
+                                <a class="link" href="menu.html">View on menu</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 signature-card">
+                            <img src="shawarma.webp" class="card-img-top" alt="Shawarma wrap">
+                            <div class="card-body">
+                                <h3 class="h5">Street Shawarma Wrap</h3>
+                                <p class="text-muted small">Pickled onion, garlic sauce, toasted flatbread.</p>
+                                <a class="link" href="menu.html">View on menu</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 signature-card">
+                            <img src="pasta.webp" class="card-img-top" alt="Pasta with vegetables">
+                            <div class="card-body">
+                                <h3 class="h5">Garden Herb Pasta</h3>
+                                <p class="text-muted small">Zesty basil, roasted cherry tomatoes, parmesan.</p>
+                                <a class="link" href="menu.html">View on menu</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section story" id="about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="badge">Our story</span>
+                        <h2 class="section-title mt-3">A modern take on the comfort classics you love.</h2>
+                        <p class="text-muted">
+                            Since 1999, Special Dish has blended old-world techniques with
+                            vibrant new flavors. Our chefs source locally, finish by hand, and never
+                            rush the details.
+                        </p>
+                        <div class="row g-3 my-3">
+                            <div class="col-md-6">
+                                <h4 class="h6 text-uppercase">Open fire</h4>
+                                <p class="text-muted small">Charcoal grilled mains with a signature citrus glaze.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="h6 text-uppercase">Seasonal sides</h4>
+                                <p class="text-muted small">Weekly rotating vegetables and grains.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-outline-light" href="about.html">Read our story</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="story-media">
+                            <img src="two.webp" alt="Chef finishing a plate" class="img-fluid">
+                            <div class="media-card">
+                                <h4>125k+</h4>
+                                <p>Plates served in 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section experience">
+            <div class="container">
+                <div class="section-header mb-4">
+                    <h2 class="section-title">Order your way</h2>
+                    <p class="section-subtitle">Choose quick order, full cart checkout, or a seat at the chef bar.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 experience-card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-bolt"></i>
+                                <h3 class="h5 mt-3">Quick order</h3>
+                                <p class="text-muted small">Tap a favorite and checkout in under 20 seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 experience-card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <h3 class="h5 mt-3">Build a cart</h3>
+                                <p class="text-muted small">Mix mains, sides, and sweets for the whole table.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 experience-card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-chair"></i>
+                                <h3 class="h5 mt-3">Dine in</h3>
+                                <p class="text-muted small">Reserve a table or plan private gatherings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section chefs" id="chef">
+            <div class="container">
+                <div class="section-header mb-4">
+                    <h2 class="section-title">Meet the chefs</h2>
+                    <p class="section-subtitle">Creative leaders behind every menu drop.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="card h-100 chef-card">
+                            <img src="male-chef-kitchen-cooking-dish-frying-pan.webp" class="card-img-top" alt="Chef New Catherine">
+                            <div class="card-body">
+                                <h3 class="h5">New Catherine</h3>
+                                <p class="text-muted small">Kitchen officer, open-fire specialist.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 chef-card">
+                            <img src="male-chef-kitchen-holding-plate-fresh-vegetables.webp" class="card-img-top" alt="Chef Lindsay Perlen">
+                            <div class="card-body">
+                                <h3 class="h5">Lindsay Perlen</h3>
+                                <p class="text-muted small">Owner and seasonal menu curator.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 chef-card">
+                            <img src="smiling-young-male-cook-chef-uniform-holding-prepared-beef-dish-against-white-background.webp" class="card-img-top" alt="Chef Isabella Grace">
+                            <div class="card-body">
+                                <h3 class="h5">Isabella Grace</h3>
+                                <p class="text-muted small">Pizza and dough fermentation.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews">
+            <div class="container">
+                <div class="section-header mb-4">
+                    <h2 class="section-title">Guests say it best</h2>
+                    <p class="section-subtitle">Real feedback from the Special Dish community.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="card h-100 review-card">
+                            <div class="card-body">
+                                <p class="fst-italic">"Fast delivery, food still sizzling. The herb pasta is unreal."</p>
+                                <h4 class="h6 mt-3">Omar, Cairo</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 review-card">
+                            <div class="card-body">
+                                <p class="fst-italic">"Table service was flawless and the chef tasting menu was a show."</p>
+                                <h4 class="h6 mt-3">Layla, Giza</h4>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="card h-100 review-card">
+                            <div class="card-body">
+                                <p class="fst-italic">"We ordered for 8 people. Every dish arrived on point."</p>
+                                <h4 class="h6 mt-3">Hadi, Zamalek</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta" id="contact">
+            <div class="container">
+                <div class="card cta-card p-4 p-md-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-4">
+                        <div>
+                            <span class="badge">Let us host</span>
+                            <h2 class="section-title mt-2">Ready to plan a private dinner?</h2>
+                            <p class="section-subtitle">Tell us about your event and we will curate the perfect menu.</p>
+                        </div>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a class="btn btn-primary" href="contact.html">Talk to the team</a>
+                            <a class="btn btn-outline-light" href="menu.html">Browse menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h4>Special Dish</h4>
+                    <p>Chef-crafted comfort food with modern flavors.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Visit</h4>
+                    <p>October Garden Golf Corner</p>
+                    <p>Daily: 11:00 - 23:00</p>
+                    <p>Phone: +201025967218</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Explore</h4>
+                    <p><a href="menu.html">Menu</a></p>
+                    <p><a href="reservations.html">Reservations</a></p>
+                    <p><a href="locations.html">Locations</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow</h4>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-4">
+                <span>Design by Abdelrahiman Ibrahim</span>
+                <span>Copyright 2026. All rights reserved.</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
-
 </html>

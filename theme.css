@@ -1,0 +1,246 @@
+:root {
+    --bg: #0f0d0a;
+    --surface: #1d1813;
+    --surface-2: #281f18;
+    --ink: #f7f1e8;
+    --muted: #cbbfae;
+    --accent: #e4572e;
+    --accent-2: #f2a541;
+    --accent-3: #2f9c95;
+    --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    --radius-lg: 22px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+
+    --bs-body-bg: #0f0d0a;
+    --bs-body-color: #f7f1e8;
+    --bs-primary: #e4572e;
+    --bs-border-color: rgba(255, 255, 255, 0.12);
+    --bs-link-color: #f2a541;
+    --bs-link-hover-color: #f7c27a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", system-ui, sans-serif;
+    background: radial-gradient(1200px 800px at 10% 10%, rgba(228, 87, 46, 0.2), transparent 55%),
+        radial-gradient(900px 700px at 90% 0%, rgba(47, 156, 149, 0.18), transparent 50%),
+        linear-gradient(160deg, #0f0d0a 0%, #17130f 55%, #0b0a09 100%);
+    color: var(--ink);
+    min-height: 100svh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 42px 42px;
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 9, 8, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand.logo {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: var(--accent-2);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 13px;
+    color: var(--muted);
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.navbar-nav {
+    gap: 18px;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+    .navbar-actions {
+        margin-left: auto;
+    }
+}
+
+.nav-link:hover {
+    color: var(--ink);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-2);
+    transition: width 0.2s ease;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.phone-link {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.text-muted {
+    color: var(--muted) !important;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.card {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    border: none;
+    color: #1a0f0b;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+}
+
+.footer {
+    padding: 50px 0 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(8, 7, 6, 0.8);
+}
+
+.footer h4 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer li {
+    color: var(--muted);
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.footer a {
+    color: var(--muted);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--muted);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .phone-link {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
