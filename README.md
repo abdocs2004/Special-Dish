@@ -1,13 +1,13 @@
 # Special Dish
 
-A modern, responsive food-ordering website built with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
+Special Dish is a modern, responsive food-ordering website designed for a polished restaurant experience. The project delivers a premium aesthetic, clear information architecture, and a smooth ordering flow using HTML, Bootstrap 5, and vanilla JavaScript.
 
-## Features
-- Responsive layout using Bootstrap 5
-- Multi-item cart with quantity controls
+## Highlights
+- Responsive, mobile-first layout powered by Bootstrap 5
+- Multi-item cart with quantity controls and dynamic totals
 - Menu search and category filters
-- Active nav underline based on current page
-- SEO meta tags and basic schema markup
+- Active navigation underline based on the current page
+- SEO-ready metadata and basic schema markup
 
 ## Pages
 - Home: index.html
@@ -38,16 +38,17 @@ A modern, responsive food-ordering website built with HTML, CSS, Bootstrap 5, an
 
 ## Getting Started
 1. Clone or download the repository.
-2. Open index.html in your browser.
+2. Open index.html in a browser.
 
 ## Customization
-- Update branding and colors in theme.css.
-- Edit menu items in menu.html.
-- Update contact details in the footer and header.
+- Branding and colors: theme.css
+- Menu items and pricing: menu.html
+- Contact details: header and footer in each page
+- Cart logic and behavior: app.js
 
 ## Credits
 - Icons: Font Awesome
 - Fonts: Google Fonts (Manrope, Playfair Display)
 
 ## License
-This project is for learning and portfolio use. Add a LICENSE file if you plan to open-source it.
+This project is provided for learning and portfolio use. Add a LICENSE file if you plan to open-source it.
