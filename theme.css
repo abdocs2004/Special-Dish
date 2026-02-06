@@ -152,6 +152,12 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 
 .btn-primary {
@@ -163,6 +169,12 @@ img {
 
 .btn-primary:hover {
     transform: translateY(-1px);
+}
+
+.btn,
+.nav-link,
+.navbar-brand {
+    transition: color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .btn-outline-light {
@@ -242,5 +254,16 @@ img {
         animation: none !important;
         transition: none !important;
         scroll-behavior: auto !important;
+    }
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

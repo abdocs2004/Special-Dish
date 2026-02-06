@@ -93,7 +93,7 @@ function handleMenuActions() {
             id: card.dataset.id,
             name: card.dataset.name,
             price: Number(card.dataset.price || 0),
-            img: card.dataset.img || "",
+            img: card.dataset.img || card.querySelector("img")?.getAttribute("src") || "",
         };
 
         if (actionButton.dataset.action === "add") {
