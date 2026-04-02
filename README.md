@@ -1,25 +1,25 @@
-# Special Dish
+# سبيشل ديش
 
-Special Dish is a modern, responsive food-ordering website designed for a polished restaurant experience. The project delivers a premium aesthetic, clear information architecture, and a smooth ordering flow using HTML, Bootstrap 5, and vanilla JavaScript.
+موقع سبيشل ديش هو موقع طلب طعام حديث ومتجاوب، صُمم ليقدم تجربة مطعم أنيقة وواضحة وسريعة. يعتمد المشروع على HTML وBootstrap 5 وJavaScript الخام، مع واجهة عربية RTL وهوية بصرية مستوحاة من المطاعم العربية.
 
-## Highlights
-- Responsive, mobile-first layout powered by Bootstrap 5
-- Multi-item cart with quantity controls and dynamic totals
-- Menu search and category filters
-- Active navigation underline based on the current page
-- SEO-ready metadata and basic schema markup
+## المميزات
+- تصميم متجاوب يبدأ من الشاشات الصغيرة ويعمل بسلاسة على جميع الأجهزة
+- سلة مشتريات متعددة الأصناف مع التحكم في الكميات والحساب التلقائي
+- بحث داخل القائمة مع فلاتر للفئات
+- تمييز الصفحة النشطة في شريط التنقل
+- بيانات SEO جاهزة مع schema أساسي
 
-## Pages
-- Home: index.html
-- Menu: menu.html
-- Cart: cart.html
-- About: about.html
-- Reservations: reservations.html
-- Locations: locations.html
-- Journal: blog.html
-- Contact: contact.html
+## الصفحات
+- الرئيسية: index.html
+- القائمة: menu.html
+- السلة: cart.html
+- من نحن: about.html
+- الحجوزات: reservations.html
+- المواقع: locations.html
+- المدونة: blog.html
+- تواصل معنا: contact.html
 
-## Project Structure
+## هيكل المشروع
 - index.html
 - menu.html
 - cart.html
@@ -34,21 +34,21 @@ Special Dish is a modern, responsive food-ordering website designed for a polish
 - menu.css
 - cart.css
 - pages.css
-- images/ (all site images)
+- images/ للصور الخاصة بالموقع
 
-## Getting Started
-1. Clone or download the repository.
-2. Open index.html in a browser.
+## طريقة التشغيل
+1. انسخ المشروع أو قم بتنزيله.
+2. افتح ملف index.html في المتصفح.
 
-## Customization
-- Branding and colors: theme.css
-- Menu items and pricing: menu.html
-- Contact details: header and footer in each page
-- Cart logic and behavior: app.js
+## التخصيص
+- الألوان والهوية: theme.css
+- عناصر القائمة والأسعار: menu.html
+- بيانات التواصل: رأس وتذييل كل صفحة
+- منطق السلة والدفع: app.js
 
-## Credits
-- Icons: Font Awesome
-- Fonts: Google Fonts (Manrope, Playfair Display)
+## الاعتمادات
+- الأيقونات: Font Awesome
+- الخطوط: Google Fonts (Cairo, Almarai, Playfair Display)
 
-## License
-This project is provided for learning and portfolio use. Add a LICENSE file if you plan to open-source it.
+## الترخيص
+هذا المشروع مخصص للتعلم وللاستخدام في عرض الأعمال. أضف ملف LICENSE إذا أردت نشره كمصدر مفتوح.
