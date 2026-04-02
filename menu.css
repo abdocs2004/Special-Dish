@@ -1,10 +1,18 @@
 .menu-hero h1 {
     font-family: "Playfair Display", serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.menu-hero p {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
 }
 
 .menu-search .form-control,
 .menu-search .input-group-text {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(196, 124, 63, 0.3);
+    background: rgba(22, 17, 10, 0.8);
 }
 
 .menu-search .form-control::placeholder {
@@ -19,6 +27,11 @@
 .menu-card-body {
     display: grid;
     gap: 10px;
+}
+
+.menu-card-body h3 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
 }
 
 .price-row {

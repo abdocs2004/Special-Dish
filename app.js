@@ -98,7 +98,7 @@ function handleMenuActions() {
 
         if (actionButton.dataset.action === "add") {
             addToCart(item, 1);
-            showToast("Added to cart");
+            showToast("تمت الإضافة إلى السلة");
         }
 
         if (actionButton.dataset.action === "buy") {
@@ -156,7 +156,7 @@ function renderCart() {
 
     const cart = getCart();
     if (!cart.length) {
-        productBox.innerHTML = `<div class="card info-block"><h3>Your cart is empty</h3><p>Add dishes from the menu to get started.</p><a class="btn btn-outline-light" href="menu.html">Browse menu</a></div>`;
+        productBox.innerHTML = `<div class="card info-block"><h3>السلة فارغة</h3><p>أضف الأطباق من القائمة للبدء.</p><a class="btn btn-outline-light" href="menu.html">تصفح القائمة</a></div>`;
         if (cartSummary) {
             cartSummary.innerHTML = "";
         }
@@ -180,7 +180,7 @@ function renderCart() {
                         <button class="qty-btn" type="button" data-cart-action="increase" data-id="${item.id}">+</button>
                     </div>
                     <strong>$${total}</strong>
-                    <button class="remove-btn" type="button" data-cart-action="remove" data-id="${item.id}">Remove</button>
+                    <button class="remove-btn" type="button" data-cart-action="remove" data-id="${item.id}">حذف</button>
                 </div>
             </div>
             `;
@@ -196,10 +196,10 @@ function renderCart() {
         const total = subtotal + delivery + service;
 
         cartSummary.innerHTML = `
-            <div class="summary-row"><span>Subtotal</span><span>$${subtotal.toFixed(2)}</span></div>
-            <div class="summary-row"><span>Service</span><span>$${service.toFixed(2)}</span></div>
-            <div class="summary-row"><span>Delivery</span><span>$${delivery.toFixed(2)}</span></div>
-            <div class="summary-total"><span>Total</span><span>$${total.toFixed(2)}</span></div>
+            <div class="summary-row"><span>المجموع الفرعي</span><span>$${subtotal.toFixed(2)}</span></div>
+            <div class="summary-row"><span>رسوم الخدمة</span><span>$${service.toFixed(2)}</span></div>
+            <div class="summary-row"><span>التوصيل</span><span>$${delivery.toFixed(2)}</span></div>
+            <div class="summary-total"><span>الإجمالي</span><span>$${total.toFixed(2)}</span></div>
         `;
     }
 }
@@ -231,10 +231,10 @@ function handlePayment() {
         event.preventDefault();
         const cart = getCart();
         if (!cart.length) {
-            alert("Your cart is empty. Please add items first.");
+            alert("السلة فارغة. يرجى إضافة عناصر أولاً.");
             return;
         }
-        alert("Order placed successfully!");
+        alert("تم تأكيد الطلب بنجاح!");
         saveCart([]);
         window.location.href = "index.html";
     });

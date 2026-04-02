@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/logo.webp" type="image/webp">
-    <title>Menu</title>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Special Dish | Menu</title>
-        <meta name="description" content="Browse the Special Dish menu: fire-grilled mains, street-inspired wraps, fresh sides, and desserts.">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://special-dish.netlify.app/menu.html">
+    <title>سبيشل ديش | القائمة</title>
+    <meta name="description" content="تصفح قائمة سبيشل ديش: الأطباق الرئيسية المشوية بالنار والسندويتشات الطازة والجوانب والحلويات.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://special-dish.netlify.app/menu.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -27,22 +20,22 @@
             {
                 "@context": "https://schema.org",
                 "@type": "Menu",
-                "name": "Special Dish Menu",
+                "name": "قائمة سبيشل ديش",
                 "hasMenuSection": [
                     {
                         "@type": "MenuSection",
-                        "name": "Mains",
+                        "name": "الأطباق الرئيسية",
                         "hasMenuItem": [
-                            {"@type": "MenuItem", "name": "Grilled chicken on charcoal", "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD"}},
-                            {"@type": "MenuItem", "name": "Pizza with mushroom and sausage", "offers": {"@type": "Offer", "price": "6", "priceCurrency": "USD"}}
+                            {"@type": "MenuItem", "name": "الدجاج المشوي على الفحم", "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD"}},
+                            {"@type": "MenuItem", "name": "البيتزا بالفطر والنقانق", "offers": {"@type": "Offer", "price": "6", "priceCurrency": "USD"}}
                         ]
                     },
                     {
                         "@type": "MenuSection",
-                        "name": "Desserts",
+                        "name": "الحلويات",
                         "hasMenuItem": [
-                            {"@type": "MenuItem", "name": "Mixed ice-cream", "offers": {"@type": "Offer", "price": "2", "priceCurrency": "USD"}},
-                            {"@type": "MenuItem", "name": "Assortment cake pieces", "offers": {"@type": "Offer", "price": "4.5", "priceCurrency": "USD"}}
+                            {"@type": "MenuItem", "name": "آيس كريم مشكل", "offers": {"@type": "Offer", "price": "2", "priceCurrency": "USD"}},
+                            {"@type": "MenuItem", "name": "حلويات متنوعة", "offers": {"@type": "Offer", "price": "4.5", "priceCurrency": "USD"}}
                         ]
                     }
                 ]
@@ -53,23 +46,23 @@
         <header class="site-header">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand logo" href="index.html">Special <span>Dish</span></a>
+                    <a class="navbar-brand logo" href="index.html">سبيشل <span>ديش</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
                         aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="primaryNav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">القائمة</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">عننا</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
                         </ul>
                         <div class="d-flex align-items-center gap-3 navbar-actions">
-                            <a class="phone-link" href="tel:+201025967218">Call +201025967218</a>
-                            <a class="btn btn-outline-light btn-sm" href="reservations.html">Reserve</a>
-                            <a class="btn btn-outline-light btn-sm position-relative" href="cart.html" aria-label="View cart">
+                            <a class="phone-link" href="tel:+201025967218">اتصل +201025967218</a>
+                            <a class="btn btn-outline-light btn-sm" href="reservations.html">احجز</a>
+                            <a class="btn btn-outline-light btn-sm position-relative" href="cart.html" aria-label="عرض السلة">
                                 <i class="fa-solid fa-bag-shopping"></i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count" data-cart-count>0</span>
                             </a>
@@ -82,222 +75,222 @@
         <main>
             <section class="menu-hero py-5">
                 <div class="container">
-                    <span class="badge">Chef-curated menu</span>
-                    <h1 class="display-6 fw-semibold mt-3">Order your favorites</h1>
-                    <p class="text-muted">Build a cart or tap quick order for a lightning-fast checkout.</p>
+                    <span class="badge">قائمة مختارة من الشيف</span>
+                    <h1 class="display-6 fw-semibold mt-3">اطلب أطباقك المفضلة</h1>
+                    <p class="text-muted">بناء سلة أو اطلب بسرعة للدفع السريع.</p>
                 </div>
             </section>
 
             <section class="menu-controls container d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <div class="d-flex flex-wrap gap-2">
-                    <button class="btn btn-outline-light btn-sm filter-btn active" type="button" data-filter="all">All</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="grill">Grill</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="wraps">Wraps</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="mains">Mains</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="sides">Sides</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="drinks">Drinks</button>
-                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="desserts">Desserts</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn active" type="button" data-filter="all">الكل</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="grill">مشوي</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="wraps">سندويتشات</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="mains">أطباق رئيسية</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="sides">جوانب</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="drinks">مشروبات</button>
+                    <button class="btn btn-outline-light btn-sm filter-btn" type="button" data-filter="desserts">حلويات</button>
                 </div>
                 <div class="input-group menu-search">
                     <span class="input-group-text bg-transparent text-muted"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input type="search" class="form-control bg-transparent text-light" id="menu-search" placeholder="Search dishes">
+                    <input type="search" class="form-control bg-transparent text-light" id="menu-search" placeholder="ابحث عن الأطباق">
                 </div>
             </section>
 
             <section class="container py-4">
                 <div class="row g-4 menu-grid" data-menu-grid>
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="chicken-charcoal" data-name="Grilled chicken on charcoal" data-price="5" data-category="grill" data-img="./images/chichen.webp">
-                            <img src="./images/chichen.webp" class="card-img-top" alt="Grilled chicken on charcoal">
+                        <article class="card h-100 menu-card" data-id="chicken-charcoal" data-name="دجاج مشوي على الفحم" data-price="5" data-category="grill" data-img="./images/chichen.webp">
+                            <img src="./images/chichen.webp" class="card-img-top" alt="دجاج مشوي على الفحم">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Grilled chicken on charcoal</h3>
-                                <p class="text-muted small">Herb butter, lemon quinoa, citrus glaze.</p>
+                                <h3 class="h5">دجاج مشوي على الفحم</h3>
+                                <p class="text-muted small">زبدة الأعشاب، كينوا بالليمون، جلاز الحمضيات.</p>
                                 <div class="price-row">
                                     <span class="price">$5.00</span>
                                     <span class="strike">$8.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="kebab" data-name="Chicken nugget kebab" data-price="4.5" data-category="wraps" data-img="./images/chicken-kebab.webp">
-                            <img src="./images/chicken-kebab.webp" class="card-img-top" alt="Chicken nugget kebab">
+                        <article class="card h-100 menu-card" data-id="kebab" data-name="كباب دجاج" data-price="4.5" data-category="wraps" data-img="./images/chicken-kebab.webp">
+                            <img src="./images/chicken-kebab.webp" class="card-img-top" alt="كباب دجاج">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Chicken nugget kebab</h3>
-                                <p class="text-muted small">Toasted pita, roasted pepper sauce, pickles.</p>
+                                <h3 class="h5">كباب دجاج</h3>
+                                <p class="text-muted small">خبز محمص، صلصة الفلفل المشوي، مخللات.</p>
                                 <div class="price-row">
                                     <span class="price">$4.50</span>
                                     <span class="strike">$7.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="burger" data-name="Chicken burger with tomato" data-price="4" data-category="mains" data-img="./images/burger.webp">
-                            <img src="./images/burger.webp" class="card-img-top" alt="Chicken burger with tomato">
+                        <article class="card h-100 menu-card" data-id="burger" data-name="برجر دجاج بالطماطم" data-price="4" data-category="mains" data-img="./images/burger.webp">
+                            <img src="./images/burger.webp" class="card-img-top" alt="برجر دجاج بالطماطم">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Chicken burger with tomato</h3>
-                                <p class="text-muted small">Smoky aioli, lettuce, brioche bun.</p>
+                                <h3 class="h5">برجر دجاج بالطماطم</h3>
+                                <p class="text-muted small">أيولي مدخن، خس، خبز ناعم.</p>
                                 <div class="price-row">
                                     <span class="price">$4.00</span>
                                     <span class="strike">$6.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="fish" data-name="Fried fish with vegetables" data-price="5.5" data-category="mains" data-img="./images/fish.webp">
-                            <img src="./images/fish.webp" class="card-img-top" alt="Fried fish with vegetables">
+                        <article class="card h-100 menu-card" data-id="fish" data-name="سمك مقلي بالخضار" data-price="5.5" data-category="mains" data-img="./images/fish.webp">
+                            <img src="./images/fish.webp" class="card-img-top" alt="سمك مقلي بالخضار">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Fried fish with vegetables</h3>
-                                <p class="text-muted small">Mint slaw, grilled lime, garlic oil.</p>
+                                <h3 class="h5">سمك مقلي بالخضار</h3>
+                                <p class="text-muted small">سلطة النعناع، ليم مشوي، زيت الثوم.</p>
                                 <div class="price-row">
                                     <span class="price">$5.50</span>
                                     <span class="strike">$7.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="pasta" data-name="Pasta with vegetable" data-price="3.5" data-category="mains" data-img="./images/pasta.webp">
-                            <img src="./images/pasta.webp" class="card-img-top" alt="Pasta with vegetable">
+                        <article class="card h-100 menu-card" data-id="pasta" data-name="باستا بالخضار" data-price="3.5" data-category="mains" data-img="./images/pasta.webp">
+                            <img src="./images/pasta.webp" class="card-img-top" alt="باستا بالخضار">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Pasta with vegetable</h3>
-                                <p class="text-muted small">Zesty basil, roasted cherry tomatoes.</p>
+                                <h3 class="h5">باستا بالخضار</h3>
+                                <p class="text-muted small">ريحان منعش، طماطم كرزية محمصة.</p>
                                 <div class="price-row">
                                     <span class="price">$3.50</span>
                                     <span class="strike">$5.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="shawarma" data-name="Shawarma" data-price="3" data-category="wraps" data-img="./images/shawarma.webp">
-                            <img src="./images/shawarma.webp" class="card-img-top" alt="Shawarma wrap">
+                        <article class="card h-100 menu-card" data-id="shawarma" data-name="شاورما" data-price="3" data-category="wraps" data-img="./images/shawarma.webp">
+                            <img src="./images/shawarma.webp" class="card-img-top" alt="شاورما">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Street shawarma wrap</h3>
-                                <p class="text-muted small">Garlic sauce, pickled onion, toasted flatbread.</p>
+                                <h3 class="h5">شاورما الشارع</h3>
+                                <p class="text-muted small">صلصة الثوم، بصل مخلل، خبز محمص.</p>
                                 <div class="price-row">
                                     <span class="price">$3.00</span>
                                     <span class="strike">$4.50</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="pizza" data-name="Pizza with mushroom and sausage" data-price="6" data-category="mains" data-img="./images/pizza.webp">
-                            <img src="./images/pizza.webp" class="card-img-top" alt="Pizza with mushroom and sausage">
+                        <article class="card h-100 menu-card" data-id="pizza" data-name="بيتزا بالفطر والنقانق" data-price="6" data-category="mains" data-img="./images/pizza.webp">
+                            <img src="./images/pizza.webp" class="card-img-top" alt="بيتزا بالفطر والنقانق">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Pizza with mushroom and sausage</h3>
-                                <p class="text-muted small">Smoked gouda, chili honey, crisp crust.</p>
+                                <h3 class="h5">بيتزا بالفطر والنقانق</h3>
+                                <p class="text-muted small">جودا مدخن، عسل الفلفل الحار، قشرة مقرمشة.</p>
                                 <div class="price-row">
                                     <span class="price">$6.00</span>
                                     <span class="strike">$9.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="vegetable" data-name="Vegetables plate" data-price="2" data-category="sides" data-img="./images/vegetable.webp">
-                            <img src="./images/vegetable.webp" class="card-img-top" alt="Vegetables plate">
+                        <article class="card h-100 menu-card" data-id="vegetable" data-name="طبق خضار" data-price="2" data-category="sides" data-img="./images/vegetable.webp">
+                            <img src="./images/vegetable.webp" class="card-img-top" alt="طبق خضار">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Vegetables plate</h3>
-                                <p class="text-muted small">Seasonal roast with herb vinaigrette.</p>
+                                <h3 class="h5">طبق خضار</h3>
+                                <p class="text-muted small">خضار موسمي محمص مع تتبيلة الأعشاب.</p>
                                 <div class="price-row">
                                     <span class="price">$2.00</span>
                                     <span class="strike">$3.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="coffee" data-name="Cup coffee" data-price="1.5" data-category="drinks" data-img="./images/coffee.webp">
-                            <img src="./images/coffee.webp" class="card-img-top" alt="Cup coffee">
+                        <article class="card h-100 menu-card" data-id="coffee" data-name="قهوة" data-price="1.5" data-category="drinks" data-img="./images/coffee.webp">
+                            <img src="./images/coffee.webp" class="card-img-top" alt="قهوة">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Cup coffee</h3>
-                                <p class="text-muted small">Rich espresso, steamed milk art.</p>
+                                <h3 class="h5">قهوة سادة</h3>
+                                <p class="text-muted small">إسبريسو غني، حليب مبخر.</p>
                                 <div class="price-row">
                                     <span class="price">$1.50</span>
                                     <span class="strike">$2.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="cola" data-name="Mojito cola cocktail" data-price="1.75" data-category="drinks" data-img="./images/cola.webp">
-                            <img src="./images/cola.webp" class="card-img-top" alt="Mojito cola cocktail">
+                        <article class="card h-100 menu-card" data-id="cola" data-name="كوكتيل الموهيتو" data-price="1.75" data-category="drinks" data-img="./images/cola.webp">
+                            <img src="./images/cola.webp" class="card-img-top" alt="كوكتيل الموهيتو">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Mojito cola cocktail</h3>
-                                <p class="text-muted small">Minted lime, chilled cola blend.</p>
+                                <h3 class="h5">كوكتيل الموهيتو</h3>
+                                <p class="text-muted small">ليم بالنعناع، مزيج كولا مثلج.</p>
                                 <div class="price-row">
                                     <span class="price">$1.75</span>
                                     <span class="strike">$2.00</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
-                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
+                                    <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">طلب سريع</button>
                                 </div>
                             </div>
                         </article>
                     </div>
 
                     <div class="col-sm-6 col-lg-4">
-                        <article class="card h-100 menu-card" data-id="ice-cream" data-name="Mixed ice-cream" data-price="2" data-category="desserts" data-img="./images/ice-cream.webp">
-                            <img src="./images/ice-cream.webp" class="card-img-top" alt="Mixed ice-cream">
+                        <article class="card h-100 menu-card" data-id="ice-cream" data-name="آيس كريم مشكل" data-price="2" data-category="desserts" data-img="./images/ice-cream.webp">
+                            <img src="./images/ice-cream.webp" class="card-img-top" alt="آيس كريم مشكل">
                             <div class="card-body menu-card-body">
-                                <h3 class="h5">Mixed ice-cream</h3>
-                                <p class="text-muted small">Vanilla bean, pistachio, caramel swirl.</p>
+                                <h3 class="h5">آيس كريم مشكل</h3>
+                                <p class="text-muted small">فانيليا، فستق، تموج الكراميل.</p>
                                 <div class="price-row">
                                     <span class="price">$2.00</span>
                                     <span class="strike">$3.50</span>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">Add to cart</button>
+                                    <button class="btn btn-primary btn-sm" type="button" data-action="add">أضف للسلة</button>
                                     <button class="add-to-cart-btn btn btn-outline-light btn-sm" type="button" data-action="buy">Quick order</button>
                                 </div>
                             </div>
@@ -332,23 +325,23 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md-3">
-                        <h4>Special Dish</h4>
-                        <p>Chef-crafted comfort food with modern flavors.</p>
+                        <h4>سبيشل ديش</h4>
+                        <p>طعام مريح من الشيف مع نكهات حديثة.</p>
                     </div>
                     <div class="col-md-3">
-                        <h4>Visit</h4>
-                        <p>October Garden Golf Corner</p>
-                        <p>Daily: 11:00 - 23:00</p>
-                        <p>Phone: +201025967218</p>
+                        <h4>زر</h4>
+                        <p>زاوية جولف أكتوبر جاردن</p>
+                        <p>يوميًا: 11:00 - 23:00</p>
+                        <p>الهاتف: +201025967218</p>
                     </div>
                     <div class="col-md-3">
-                        <h4>Explore</h4>
-                        <p><a href="menu.html">Menu</a></p>
-                        <p><a href="reservations.html">Reservations</a></p>
-                        <p><a href="locations.html">Locations</a></p>
+                        <h4>اكتشف</h4>
+                        <p><a href="menu.html">القائمة</a></p>
+                        <p><a href="reservations.html">الحجوزات</a></p>
+                        <p><a href="locations.html">المواقع</a></p>
                     </div>
                     <div class="col-md-3">
-                        <h4>Follow</h4>
+                        <h4>متابعة</h4>
                         <div class="socials">
                             <a href="https://www.facebook.com/share/17VRbwLUPg/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/abdelrahiman_ibrahim.2004/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -358,8 +351,8 @@
                     </div>
                 </div>
                 <div class="footer-bottom mt-4">
-                    <span>Design by Abdelrahiman Ibrahim</span>
-                    <span>Copyright 2026. All rights reserved.</span>
+                    <span>تصميم عبد الرحمن إبراهيم</span>
+                    <span>حقوق النشر 2026. جميع الحقوق محفوظة.</span>
                 </div>
             </div>
         </footer>

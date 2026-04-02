@@ -4,6 +4,13 @@
 
 .checkout-header h1 {
     font-family: "Playfair Display", serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.checkout-header p {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
 }
 
 .cart-items {
@@ -15,11 +22,17 @@
     display: grid;
     grid-template-columns: 120px 1fr auto;
     gap: 16px;
-    padding: 16px;
+    padding: 18px;
     border-radius: var(--radius-md);
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, rgba(196, 124, 63, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(196, 124, 63, 0.2);
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+    border-color: rgba(196, 124, 63, 0.4);
+    background: linear-gradient(135deg, rgba(196, 124, 63, 0.08) 0%, rgba(196, 124, 63, 0.04) 100%);
 }
 
 .cart-item img {
@@ -39,9 +52,11 @@
     flex-direction: column;
     gap: 10px;
     align-items: flex-end;
+}196, 124, 63, 0.1);
+    border-radius: 999px;
+    padding: 6px 10px;
+    border: 1px solid rgba(196, 124, 63, 0.2);
 }
-
-.qty-control {
     display: inline-flex;
     align-items: center;
     gap: 8px;

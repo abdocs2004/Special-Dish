@@ -9,12 +9,12 @@
 }
 
 .hero-card {
-    background: linear-gradient(150deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+    background: linear-gradient(150deg, rgba(212, 165, 116, 0.08), rgba(196, 124, 63, 0.04));
     border-radius: var(--radius-lg);
-    padding: 18px;
+    padding: 20px;
     width: min(380px, 100%);
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 16px 40px rgba(196, 124, 63, 0.15);
+    border: 1px solid rgba(196, 124, 63, 0.25);
     animation: rise 0.8s ease-out;
 }
 
@@ -30,8 +30,11 @@
 }
 
 .hero-card-info h4 {
-    font-size: 18px;
-    margin-bottom: 6px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--ink);
 }
 
 .hero-card-info p {
@@ -43,7 +46,8 @@
     display: inline-block;
     margin-top: 10px;
     font-weight: 700;
-    color: var(--accent-2);
+    font-size: 16px;
+    color: var(--accent);
 }
 
 .floating-tag {

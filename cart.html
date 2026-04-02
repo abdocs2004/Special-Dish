@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Dish | Checkout</title>
-    <meta name="description" content="Review your cart and checkout your Special Dish order in seconds.">
+    <title>سبيشل ديش | السلة</title>
+    <meta name="description" content="مراجعة السلة وإتمام طلبك من سبيشل ديش في ثوان.">
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://special-dish.netlify.app/cart.html">
     <link rel="icon" href="./images/logo.webp" type="image/webp">
@@ -21,22 +21,22 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand logo" href="index.html">Special <span>Dish</span></a>
+                <a class="navbar-brand logo" href="index.html">سبيشل <span>ديش</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
                     aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="primaryNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">القائمة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عننا</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
                     </ul>
                     <div class="d-flex align-items-center gap-3 navbar-actions">
-                        <a class="phone-link" href="tel:+201025967218">Call +201025967218</a>
-                        <a class="btn btn-outline-light btn-sm" href="reservations.html">Reserve</a>
+                        <a class="phone-link" href="tel:+201025967218">اتصل +201025967218</a>
+                        <a class="btn btn-outline-light btn-sm" href="reservations.html">احجز</a>
                         <a class="btn btn-outline-light btn-sm position-relative" href="cart.html" aria-label="View cart">
                             <i class="fa-solid fa-bag-shopping"></i>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count" data-cart-count>0</span>
@@ -50,8 +50,8 @@
     <main class="checkout">
         <section class="container">
             <div class="checkout-header">
-                <h1>Your cart</h1>
-                <p>Review your dishes and complete your order.</p>
+                <h1>سلتك</h1>
+                <p>راجع الأطباق الخاصة بك وأكمل طلبك.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-8">
@@ -59,9 +59,9 @@
                 </div>
                 <aside class="col-lg-4">
                     <div class="cart-summary card">
-                    <h2>Order summary</h2>
+                    <h2>ملخص الطلب</h2>
                     <div id="cart-summary"></div>
-                    <p class="summary-note">Taxes and delivery fees calculated at checkout.</p>
+                    <p class="summary-note">يتم حساب الضرائب ورسوم التوصيل عند الدفع.</p>
                     </div>
                 </aside>
             </div>
@@ -71,27 +71,27 @@
             <div class="row g-4">
                 <div class="col-lg-8">
                     <div class="form-card card">
-                <h2>Delivery & payment</h2>
+                <h2>التوصيل والدفع</h2>
                 <form id="paymentForm">
                     <div class="form-row">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" placeholder="الاسم الكامل" required>
+                        <input type="tel" placeholder="رقم الهاتف" required>
                     </div>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Delivery Address" required></textarea>
+                    <input type="email" placeholder="عنوان البريد الإلكتروني" required>
+                    <textarea placeholder="عنوان التوصيل" required></textarea>
                     <select required>
-                        <option value="">Select Payment Method</option>
-                        <option value="cod">Cash on Delivery</option>
-                        <option value="card">Credit/Debit Card</option>
+                        <option value="">اختر طريقة الدفع</option>
+                        <option value="cod">الدفع عند الاستلام</option>
+                        <option value="card">بطاقة ائتمان</option>
                     </select>
-                    <button id="place-order-btn" class="btn btn-primary" type="submit">Place Order</button>
+                    <button id="place-order-btn" class="btn btn-primary" type="submit">تأكيد الطلب</button>
                 </form>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card info-card">
-                        <h3>Need help?</h3>
-                        <p>Call us anytime and we will handle your order directly.</p>
+                        <h3>هل تحتاج مساعدة؟</h3>
+                        <p>اتصل بنا في أي وقت وسنتعامل مع طلبك مباشرة.</p>
                         <a class="btn btn-outline-light" href="tel:+201025967218">+201025967218</a>
                     </div>
                 </div>
@@ -103,23 +103,23 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-3">
-                    <h4>Special Dish</h4>
-                    <p>Chef-crafted comfort food with modern flavors.</p>
+                    <h4>سبيشل ديش</h4>
+                    <p>طعام مريح من الشيف مع نكهات حديثة.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Visit</h4>
-                    <p>October Garden Golf Corner</p>
-                    <p>Daily: 11:00 - 23:00</p>
-                    <p>Phone: +201025967218</p>
+                    <h4>زر</h4>
+                    <p>زاوية جولف أكتوبر جاردن</p>
+                    <p>يوميًا: 11:00 - 23:00</p>
+                    <p>الهاتف: +201025967218</p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Explore</h4>
-                    <p><a href="menu.html">Menu</a></p>
-                    <p><a href="reservations.html">Reservations</a></p>
-                    <p><a href="locations.html">Locations</a></p>
+                    <h4>اكتشف</h4>
+                    <p><a href="menu.html">القائمة</a></p>
+                    <p><a href="reservations.html">الحجوزات</a></p>
+                    <p><a href="locations.html">المواقع</a></p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Follow</h4>
+                    <h4>متابعة</h4>
                     <div class="socials">
                         <a href="https://www.facebook.com/share/17VRbwLUPg/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/abdelrahiman_ibrahim.2004/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -129,8 +129,8 @@
                 </div>
             </div>
             <div class="footer-bottom mt-4">
-                <span>Design by Abdelrahiman Ibrahim</span>
-                <span>Copyright 2026. All rights reserved.</span>
+                <span>تصميم عبد الرحمن إبراهيم</span>
+                <span>حقوق النشر 2026. جميع الحقوق محفوظة.</span>
             </div>
         </div>
     </footer>
